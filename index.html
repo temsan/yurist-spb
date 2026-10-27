@@ -1,0 +1,592 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Юрист с 25-летним стажем — Санкт-Петербург</title>
+<meta name="description" content="Юрист с 25-летним стажем в Санкт-Петербурге: гражданские и арбитражные дела, земельные и экологические споры, обжалование штрафов. Суды всех инстанций, включая Верховный суд РФ.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #12141a;
+  --ink-2: #1b1e27;
+  --ivory: #f3eee4;
+  --paper: #faf7f1;
+  --brass: #b8925a;
+  --brass-hi: #d6b27a;
+  --oxblood: #7d2230;
+  --text: #22252d;
+  --muted: #6c6f78;
+  --line: #e3dccd;
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --sans: 'Manrope', 'Segoe UI', Arial, sans-serif;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--paper); color: var(--text); font: 400 17px/1.65 var(--sans); -webkit-font-smoothing: antialiased; }
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+.wrap { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
+.serif { font-family: var(--serif); }
+.kicker { font: 600 12px/1 var(--sans); letter-spacing: .22em; text-transform: uppercase; color: var(--brass); display: inline-flex; align-items: center; gap: 12px; }
+.kicker::before { content: ""; width: 28px; height: 1px; background: currentColor; }
+h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.05; margin: 0; letter-spacing: -.01em; }
+h2 { font-size: clamp(38px, 5.4vw, 64px); }
+h2 em { font-style: italic; color: var(--oxblood); font-weight: 500; }
+section { padding: 110px 0; position: relative; }
+.head { display: grid; gap: 18px; margin-bottom: 56px; max-width: 760px; }
+.head p { margin: 0; color: var(--muted); font-size: 18px; }
+
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 16px 26px; border-radius: 999px; font: 600 15px/1 var(--sans); text-decoration: none; border: 1px solid transparent; cursor: pointer; transition: transform .2s, background .2s, color .2s, border-color .2s; }
+.btn:hover { transform: translateY(-2px); }
+.btn-brass { background: var(--brass); color: var(--ink); }
+.btn-brass:hover { background: var(--brass-hi); }
+.btn-line { border-color: rgba(243,238,228,.35); color: var(--ivory); }
+.btn-line:hover { border-color: var(--ivory); }
+.btn-ink { background: var(--ink); color: var(--ivory); }
+.btn-ink:hover { background: var(--oxblood); }
+.arrow { transition: transform .2s; }
+.btn:hover .arrow { transform: translateX(4px); }
+
+/* Шапка */
+.top { position: fixed; inset: 0 0 auto; z-index: 50; transition: background .3s, box-shadow .3s; }
+.top.solid { background: rgba(18,20,26,.92); backdrop-filter: blur(10px); box-shadow: 0 1px 0 rgba(255,255,255,.06); }
+.top .wrap { display: flex; align-items: center; justify-content: space-between; height: 76px; gap: 20px; }
+.mark { display: flex; align-items: center; gap: 12px; color: var(--ivory); text-decoration: none; }
+.mark i { width: 40px; height: 40px; border: 1px solid var(--brass); border-radius: 50%; display: grid; place-items: center; font: 600 22px/1 var(--serif); font-style: normal; color: var(--brass); }
+.mark span { font: 600 15px/1.2 var(--sans); letter-spacing: .04em; }
+.mark small { display: block; font-weight: 400; color: #a9abb3; font-size: 12px; letter-spacing: .08em; }
+.nav { display: flex; gap: 30px; }
+.nav a { color: #c9cbd2; text-decoration: none; font-size: 14px; font-weight: 500; position: relative; }
+.nav a::after { content: ""; position: absolute; left: 0; right: 100%; bottom: -6px; height: 1px; background: var(--brass); transition: right .25s; }
+.nav a:hover { color: var(--ivory); }
+.nav a:hover::after { right: 0; }
+.top .btn { padding: 12px 20px; }
+
+/* Первый экран */
+.hero { background: radial-gradient(1200px 600px at 75% 30%, #262a36 0%, var(--ink) 60%); color: var(--ivory); padding: 150px 0 0; overflow: hidden; }
+.hero::before { content: "25"; position: absolute; right: -2vw; top: 40px; font: 700 clamp(260px, 38vw, 560px)/1 var(--serif); color: transparent; -webkit-text-stroke: 1px rgba(184,146,90,.18); pointer-events: none; }
+.hero .wrap { display: grid; grid-template-columns: 1.15fr .85fr; gap: 56px; align-items: end; position: relative; }
+.hero h1 { font-size: clamp(48px, 7vw, 96px); margin: 26px 0 28px; }
+.hero h1 em { font-style: italic; color: var(--brass-hi); font-weight: 500; }
+.hero .lead { font-size: 19px; color: #c3c5cc; max-width: 540px; margin: 0 0 38px; }
+.hero .actions { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 72px; }
+.portrait { position: relative; align-self: end; }
+.portrait::before { content: ""; position: absolute; inset: 28px -18px -18px 28px; border: 1px solid var(--brass); border-radius: 220px 220px 0 0; }
+.portrait img { position: relative; width: 100%; aspect-ratio: 4/5; object-fit: cover; object-position: center top; border-radius: 220px 220px 0 0; filter: saturate(.92) contrast(1.03); }
+.seal { position: absolute; left: -46px; bottom: 70px; width: 132px; height: 132px; border-radius: 50%; background: var(--oxblood); color: var(--ivory); display: grid; place-items: center; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,.4); }
+.seal svg { position: absolute; inset: 0; animation: spin 26s linear infinite; }
+.seal b { font: 700 40px/1 var(--serif); display: block; }
+.seal small { font-size: 11px; letter-spacing: .14em; text-transform: uppercase; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.hero .wrap-facts { display: block; }
+.facts { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid rgba(255,255,255,.1); margin-top: 0; }
+.facts div { padding: 28px 24px 34px 0; }
+.facts div + div { padding-left: 24px; border-left: 1px solid rgba(255,255,255,.1); }
+.facts b { display: block; font: 600 30px/1.1 var(--serif); color: var(--ivory); }
+.facts span { font-size: 14px; color: #9a9da6; }
+
+/* Бегущая строка */
+.ticker { background: var(--oxblood); color: var(--ivory); overflow: hidden; white-space: nowrap; padding: 18px 0; }
+.ticker-track { display: inline-flex; gap: 48px; animation: tick 40s linear infinite; font: 500 22px/1 var(--serif); font-style: italic; }
+.ticker-track span::after { content: "§"; margin-left: 48px; color: var(--brass-hi); font-style: normal; }
+@keyframes tick { to { transform: translateX(-50%); } }
+
+/* Направления */
+.areas { border-top: 1px solid var(--line); }
+.area { display: grid; grid-template-columns: 110px 1fr 1.1fr 40px; gap: 28px; align-items: start; padding: 34px 0; border-bottom: 1px solid var(--line); cursor: pointer; transition: background .3s, padding .3s; }
+.area:hover { background: #f2ece0; padding-left: 18px; padding-right: 18px; }
+.area .num { font: 600 52px/1 var(--serif); color: var(--brass); }
+.area h3 { font-size: 32px; color: var(--ink); }
+.area p { margin: 6px 0 0; color: var(--muted); font-size: 15px; }
+.area ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 8px; max-height: 0; overflow: hidden; opacity: 0; transition: max-height .45s ease, opacity .3s; }
+.area.open ul { max-height: 260px; opacity: 1; }
+.area li { padding-left: 20px; position: relative; font-size: 15.5px; }
+.area li::before { content: "—"; position: absolute; left: 0; color: var(--brass); }
+.area .plus { width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--line); display: grid; place-items: center; font-size: 20px; color: var(--ink); transition: transform .3s, background .3s; }
+.area.open .plus { transform: rotate(45deg); background: var(--ink); color: var(--ivory); border-color: var(--ink); }
+
+/* Лестница инстанций */
+.ladder-sec { background: var(--ink); color: var(--ivory); overflow: hidden; }
+.ladder-sec h2 { color: var(--ivory); }
+.ladder-sec h2 em { color: var(--brass-hi); }
+.ladder-sec .head p { color: #a6a9b1; }
+.ladder { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; align-items: end; }
+.step { background: var(--ink-2); border: 1px solid rgba(255,255,255,.07); border-radius: 18px 18px 4px 4px; padding: 26px 22px; display: grid; align-content: space-between; gap: 30px; position: relative; transition: transform .3s, border-color .3s; }
+.step:hover { transform: translateY(-6px); border-color: var(--brass); }
+.step:nth-child(1) { height: 230px; }
+.step:nth-child(2) { height: 300px; }
+.step:nth-child(3) { height: 370px; }
+.step:nth-child(4) { height: 440px; background: linear-gradient(160deg, var(--oxblood), #561620); border-color: transparent; }
+.step .lvl { font: 600 13px/1 var(--sans); letter-spacing: .18em; color: var(--brass-hi); }
+.step h3 { font-size: 30px; }
+.step p { margin: 8px 0 0; font-size: 14.5px; color: #b9bcc4; }
+.step:nth-child(4) p { color: #ecd9db; }
+
+/* Калькулятор шансов */
+.quiz-wrap { display: grid; grid-template-columns: .9fr 1.1fr; gap: 56px; align-items: start; }
+.quiz { background: #fff; border: 1px solid var(--line); border-radius: 24px; padding: 38px; box-shadow: 0 30px 60px -30px rgba(18,20,26,.25); min-height: 420px; display: flex; flex-direction: column; }
+.progress { height: 3px; background: var(--line); border-radius: 3px; overflow: hidden; margin-bottom: 30px; }
+.progress i { display: block; height: 100%; width: 0; background: var(--oxblood); transition: width .35s; }
+.q-count { font-size: 13px; color: var(--muted); letter-spacing: .1em; text-transform: uppercase; }
+.q-title { font: 600 32px/1.15 var(--serif); color: var(--ink); margin: 10px 0 26px; }
+.opts { display: grid; gap: 12px; }
+.opt { text-align: left; font: 500 16px/1.4 var(--sans); background: var(--paper); border: 1px solid var(--line); border-radius: 14px; padding: 16px 20px; cursor: pointer; color: var(--text); transition: border-color .2s, background .2s, transform .2s; }
+.opt:hover { border-color: var(--ink); transform: translateX(4px); }
+.result { display: none; }
+.result.show { display: block; animation: fade .5s ease; }
+.gauge { display: flex; gap: 6px; margin: 18px 0 22px; }
+.gauge i { flex: 1; height: 10px; border-radius: 6px; background: var(--line); }
+.gauge i.on { background: var(--oxblood); }
+.result h3 { font-size: 36px; color: var(--ink); }
+.result p { color: var(--muted); }
+.note { font-size: 13px; color: var(--muted); margin-top: 16px; }
+.back { background: none; border: 0; color: var(--muted); font: 500 14px var(--sans); cursor: pointer; padding: 0; margin-top: auto; padding-top: 22px; align-self: flex-start; }
+
+/* Обо мне: коллаж портретов */
+.about { display: grid; grid-template-columns: 1.1fr .9fr; gap: 72px; align-items: center; }
+.collage { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; position: relative; align-items: start; }
+.collage figure { margin: 0; overflow: hidden; border-radius: 18px; position: relative; }
+.collage img { width: 100%; height: 100%; object-fit: cover; object-position: center top; transition: transform .8s ease, filter .6s; filter: grayscale(.25); }
+.collage figure:hover img { transform: scale(1.04); filter: none; }
+.collage .sm { aspect-ratio: 3/4; }
+.collage .sm:first-child { border-radius: 200px 200px 18px 18px; }
+.collage .sm:last-child { margin-top: 70px; }
+.collage::after { content: ""; position: absolute; left: -22px; top: 40px; bottom: -22px; width: 1px; background: var(--brass); }
+.about-text p { color: var(--muted); font-size: 17.5px; margin: 0 0 18px; }
+.quote { font: 500 30px/1.3 var(--serif); font-style: italic; color: var(--ink); border-left: 2px solid var(--oxblood); padding: 4px 0 4px 26px; margin: 34px 0; }
+.back:hover { color: var(--ink); }
+@keyframes fade { from { opacity: 0; transform: translateY(10px); } }
+
+/* Цены */
+.prices-sec { background: var(--ivory); }
+.price-list { display: grid; grid-template-columns: 1fr 1fr; gap: 0 64px; }
+.pr { display: flex; align-items: baseline; gap: 12px; padding: 18px 0; border-bottom: 1px solid var(--line); }
+.pr span { flex: 0 1 auto; }
+.pr::after { content: ""; order: 1; flex: 1; border-bottom: 1px dotted #b9ae98; transform: translateY(-5px); }
+.pr b { order: 2; font: 600 22px/1 var(--serif); color: var(--ink); white-space: nowrap; }
+.pr.free b { color: var(--oxblood); }
+.price-foot { margin-top: 28px; color: var(--muted); font-size: 15px; }
+
+/* Как работаю */
+.flow { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; counter-reset: f; }
+.flow div { padding: 0 28px 0 0; position: relative; counter-increment: f; }
+.flow div::before { content: counter(f, decimal-leading-zero); display: block; font: 600 64px/1 var(--serif); color: transparent; -webkit-text-stroke: 1px var(--brass); margin-bottom: 18px; }
+.flow div::after { content: ""; position: absolute; top: 32px; left: 108px; right: 18px; height: 1px; background: var(--line); }
+.flow div:last-child::after { display: none; }
+.flow b { display: block; font: 600 24px/1.2 var(--serif); color: var(--ink); margin-bottom: 8px; }
+.flow span { color: var(--muted); font-size: 15px; }
+
+/* Вопросы */
+.faq { display: grid; gap: 0; border-top: 1px solid var(--line); max-width: 900px; }
+.faq details { border-bottom: 1px solid var(--line); padding: 24px 0; }
+.faq summary { list-style: none; cursor: pointer; font: 600 25px/1.3 var(--serif); color: var(--ink); display: flex; justify-content: space-between; gap: 20px; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; font: 400 28px/1 var(--sans); color: var(--brass); transition: transform .3s; }
+.faq details[open] summary::after { transform: rotate(45deg); }
+.faq p { margin: 14px 0 0; color: var(--muted); max-width: 720px; }
+
+/* Контакты */
+.contact { background: var(--ink); color: var(--ivory); border-radius: 32px; padding: 70px; display: grid; grid-template-columns: 1.2fr 1fr; gap: 56px; position: relative; overflow: hidden; }
+.contact::before { content: "§"; position: absolute; right: 30px; bottom: -110px; font: 600 380px/1 var(--serif); color: rgba(184,146,90,.08); }
+.contact h2 { color: var(--ivory); font-size: clamp(36px, 4.6vw, 56px); }
+.contact h2 em { color: var(--brass-hi); }
+.contact p { color: #b5b8c0; margin: 22px 0 32px; }
+.c-list { display: grid; gap: 22px; align-content: center; position: relative; }
+.c-list small { display: block; font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: var(--brass); margin-bottom: 4px; }
+.c-list a, .c-list span { font: 600 26px/1.2 var(--serif); color: var(--ivory); text-decoration: none; }
+.c-list a:hover { color: var(--brass-hi); }
+.contact { grid-template-columns: 1.15fr .8fr .7fr; align-items: center; }
+.contact-photo { margin: 0; border-radius: 160px 160px 16px 16px; overflow: hidden; aspect-ratio: 3/4; position: relative; }
+.contact-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+
+footer { padding: 40px 0 60px; color: var(--muted); font-size: 14px; }
+footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
+
+/* Появление при прокрутке */
+.reveal { opacity: 0; transform: translateY(28px); transition: opacity .8s ease, transform .8s ease; }
+.reveal.in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+  .reveal { opacity: 1; transform: none; }
+}
+
+@media (max-width: 960px) {
+  .nav { display: none; }
+  section { padding: 80px 0; }
+  .hero { padding-top: 120px; }
+  .hero .wrap { grid-template-columns: 1fr; gap: 20px; }
+  .hero .actions { margin-bottom: 40px; }
+  .portrait { max-width: 420px; margin: 0 auto 0 30px; }
+  .facts { grid-template-columns: repeat(2, 1fr); }
+  .facts div:nth-child(3) { padding-left: 0; border-left: 0; }
+  .facts div:nth-child(n+3) { border-top: 1px solid rgba(255,255,255,.1); }
+  .area { grid-template-columns: 64px 1fr 40px; }
+  .area .num { font-size: 40px; }
+  .area ul { grid-column: 2 / 4; }
+  .ladder { grid-template-columns: 1fr 1fr; }
+  .step:nth-child(n) { height: auto; min-height: 200px; }
+  .quiz-wrap { grid-template-columns: 1fr; gap: 36px; }
+  .price-list { grid-template-columns: 1fr; }
+  .flow { grid-template-columns: 1fr 1fr; gap: 40px 0; }
+  .flow div:nth-child(2)::after { display: none; }
+  .contact { grid-template-columns: 1fr; padding: 44px 28px; }
+  .contact-photo { max-width: 260px; }
+  .about { grid-template-columns: 1fr; gap: 48px; }
+  .collage::after { display: none; }
+}
+@media (max-width: 560px) {
+  body { font-size: 16px; }
+  .wrap { padding: 0 16px; }
+  .top .btn { display: none; }
+  .hero h1 { font-size: 46px; }
+  .seal { width: 104px; height: 104px; left: -26px; bottom: 40px; }
+  .seal b { font-size: 32px; }
+  .facts b { font-size: 24px; }
+  .area { grid-template-columns: 48px 1fr 36px; gap: 14px; padding: 26px 0; }
+  .area:hover { padding-left: 0; padding-right: 0; }
+  .area h3 { font-size: 26px; }
+  .area .plus { width: 36px; height: 36px; }
+  .ladder { grid-template-columns: 1fr; }
+  .quiz { padding: 26px 20px; }
+  .q-title { font-size: 27px; }
+  .pr { flex-wrap: wrap; }
+  .pr::after { display: none; }
+  .pr b { width: 100%; }
+  .flow { grid-template-columns: 1fr; }
+  .flow div::after { display: none; }
+  .c-list a, .c-list span { font-size: 22px; }
+}
+</style>
+</head>
+<body>
+
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="mark" href="#">
+      <i>§</i>
+      <span>Юрист<small>Санкт-Петербург</small></span>
+    </a>
+    <nav class="nav">
+      <a href="#about">Обо мне</a>
+      <a href="#areas">Направления</a>
+      <a href="#instances">Инстанции</a>
+      <a href="#quiz">Шансы</a>
+      <a href="#prices">Цены</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="btn btn-brass" href="#contacts">Связаться</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="kicker">Санкт-Петербург · удалённо по всей России</span>
+      <h1>Ваше дело —<br>в <em>опытных</em><br>руках</h1>
+      <p class="lead">Гражданские и арбитражные дела, земельные и экологические споры, обжалование штрафов. 25 лет в судах — от районного до Верховного суда РФ.</p>
+      <div class="actions">
+        <a class="btn btn-brass" href="#quiz">Оценить шансы за минуту <span class="arrow">→</span></a>
+        <a class="btn btn-line" href="#contacts">Бесплатная консультация</a>
+      </div>
+    </div>
+    <div class="portrait">
+      <img src="img/portrait.jpg" alt="Юрист">
+      <div class="seal">
+        <svg viewBox="0 0 132 132" aria-hidden="true">
+          <defs><path id="circ" d="M66,66 m-52,0 a52,52 0 1,1 104,0 a52,52 0 1,1 -104,0"/></defs>
+          <text fill="#d6b27a" font-family="Manrope" font-size="10" letter-spacing="3.2"><textPath href="#circ">ЮРИДИЧЕСКАЯ ПРАКТИКА · С 2001 ГОДА · </textPath></text>
+        </svg>
+        <div><b>25</b><small>лет</small></div>
+      </div>
+    </div>
+  </div>
+  <div class="wrap wrap-facts">
+    <div class="facts">
+      <div><b>с 2001 года</b><span>диплом РАНХиГС</span></div>
+      <div><b>4 инстанции</b><span>включая Верховный суд РФ</span></div>
+      <div><b>0 ₽ предоплаты</b><span>работа по договору</span></div>
+      <div><b>Вся Россия</b><span>электронная подача в суд</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span>Гражданский кодекс РФ</span><span>Арбитражный процессуальный кодекс</span><span>Земельный кодекс РФ</span><span>Кодекс об административных правонарушениях</span><span>Гражданский процессуальный кодекс</span><span>44-ФЗ и 223-ФЗ</span><span>Закон об охране окружающей среды</span>
+    <span>Гражданский кодекс РФ</span><span>Арбитражный процессуальный кодекс</span><span>Земельный кодекс РФ</span><span>Кодекс об административных правонарушениях</span><span>Гражданский процессуальный кодекс</span><span>44-ФЗ и 223-ФЗ</span><span>Закон об охране окружающей среды</span>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap about">
+    <div class="collage reveal">
+      <figure class="sm"><img src="img/about-loft.jpg" alt="Портрет юриста" loading="lazy"></figure>
+      <figure class="sm"><img src="img/about-blue.jpg" alt="Портрет юриста" loading="lazy"></figure>
+    </div>
+    <div class="about-text reveal">
+      <span class="kicker">Обо мне</span>
+      <h2 style="margin:18px 0 28px">Четверть века <em>в судах</em></h2>
+      <p>С 2001 года веду гражданские, арбитражные и административные дела. Работал в судах разных регионов — от районных судов до Верховного суда Российской Федерации.</p>
+      <p>Беру дела, в которых вижу перспективу, и честно говорю, если её нет. Работаю по договору, без предоплаты, с отчётом по каждому этапу.</p>
+      <div class="quote">Сначала документы, потом выводы.</div>
+      <a class="btn btn-ink" href="#contacts">Обсудить ваше дело <span class="arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+<section id="areas">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="kicker">Направления</span>
+      <h2>С чем <em>приходят</em> ко мне</h2>
+      <p>Нажмите на направление, чтобы увидеть, какие дела я веду.</p>
+    </div>
+    <div class="areas reveal">
+      <div class="area open">
+        <span class="num">01</span>
+        <div><h3>Гражданские дела</h3><p>Иски под ключ — от претензии до исполнительного листа</p></div>
+        <ul>
+          <li>Споры по договорам и имуществу</li>
+          <li>Взыскание долгов и ущерба</li>
+          <li>Участие в одном или нескольких заседаниях</li>
+          <li>«Второе мнение» по проигранному делу</li>
+        </ul>
+        <span class="plus">+</span>
+      </div>
+      <div class="area">
+        <span class="num">02</span>
+        <div><h3>Арбитражные споры</h3><p>Защита бизнеса в арбитражных судах</p></div>
+        <ul>
+          <li>Долги и неустойки по поставке, подряду, аренде</li>
+          <li>Споры с госзаказчиками по 44-ФЗ и 223-ФЗ</li>
+          <li>Оспаривание решений и штрафов госорганов</li>
+          <li>Арест счетов и имущества должника</li>
+        </ul>
+        <span class="plus">+</span>
+      </div>
+      <div class="area">
+        <span class="num">03</span>
+        <div><h3>Земельные споры</h3><p>Участки, границы, разрешённое использование</p></div>
+        <ul>
+          <li>Границы участков и споры с соседями</li>
+          <li>Отказы администрации и КИО</li>
+          <li>Самовольные постройки и иски о сносе</li>
+          <li>Оспаривание кадастровой стоимости</li>
+        </ul>
+        <span class="plus">+</span>
+      </div>
+      <div class="area">
+        <span class="num">04</span>
+        <div><h3>Экологические споры</h3><p>Претензии надзорных органов</p></div>
+        <ul>
+          <li>Штрафы Росприроднадзора</li>
+          <li>Иски о возмещении вреда окружающей среде</li>
+          <li>Плата за негативное воздействие, отходы и ТКО</li>
+          <li>Санитарно-защитные зоны</li>
+        </ul>
+        <span class="plus">+</span>
+      </div>
+      <div class="area">
+        <span class="num">05</span>
+        <div><h3>Административные дела</h3><p>Обжалование штрафов и постановлений</p></div>
+        <ul>
+          <li>Штрафы ГИБДД и за парковку в Петербурге</li>
+          <li>Штрафы за перегруз с весовых рамок</li>
+          <li>Протоколы и постановления госорганов</li>
+          <li>Восстановление пропущенного срока</li>
+        </ul>
+        <span class="plus">+</span>
+      </div>
+      <div class="area">
+        <span class="num">06</span>
+        <div><h3>Проверка договоров</h3><p>Правовые и экономические риски до подписи</p></div>
+        <ul>
+          <li>Отчёт: что нельзя подписывать, что изменить</li>
+          <li>Договоры с казначейским сопровождением</li>
+          <li>НДС 22% в договорах, заключённых раньше</li>
+          <li>Проверка документов, составленных нейросетью</li>
+        </ul>
+        <span class="plus">+</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="instances" class="ladder-sec">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="kicker">Инстанции</span>
+      <h2>Пройду с вами <em>весь путь</em></h2>
+      <p>Если решение первой инстанции не устроило — дело не закончено. Веду дела на каждой ступени судебной системы.</p>
+    </div>
+    <div class="ladder reveal">
+      <div class="step"><span class="lvl">I</span><div><h3>Первая инстанция</h3><p>Районные и арбитражные суды: иск, доказательства, заседания</p></div></div>
+      <div class="step"><span class="lvl">II</span><div><h3>Апелляция</h3><p>Пересмотр решения, новые доводы и ошибки суда</p></div></div>
+      <div class="step"><span class="lvl">III</span><div><h3>Кассация</h3><p>Нарушения норм права, которые пропустили две инстанции</p></div></div>
+      <div class="step"><span class="lvl">IV</span><div><h3>Верховный суд РФ</h3><p>Высшая инстанция по гражданским, арбитражным и административным делам</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="quiz">
+  <div class="wrap quiz-wrap">
+    <div class="head reveal" style="margin:0">
+      <span class="kicker">Калькулятор шансов</span>
+      <h2>Есть ли <em>шансы</em> у вашего дела?</h2>
+      <p>Пять вопросов — и вы получите предварительную оценку. Точный ответ дам бесплатно, когда посмотрю документы.</p>
+    </div>
+    <div class="quiz reveal" id="quizBox">
+      <div class="progress"><i id="bar"></i></div>
+      <div id="qArea">
+        <div class="q-count" id="qCount"></div>
+        <div class="q-title" id="qTitle"></div>
+        <div class="opts" id="qOpts"></div>
+      </div>
+      <div class="result" id="result">
+        <div class="q-count">Предварительная оценка</div>
+        <div class="gauge" id="gauge"><i></i><i></i><i></i><i></i><i></i></div>
+        <h3 id="rTitle"></h3>
+        <p id="rText"></p>
+        <a class="btn btn-ink" href="#contacts">Разобрать с юристом бесплатно <span class="arrow">→</span></a>
+        <p class="note">Оценка ориентировочная и не заменяет консультацию: юрист может увидеть то, что не учитывает анкета.</p>
+      </div>
+      <button class="back" id="restart" type="button">↺ Начать заново</button>
+    </div>
+  </div>
+</section>
+
+<section id="prices" class="prices-sec">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="kicker">Стоимость</span>
+      <h2>Цены <em>без сюрпризов</em></h2>
+      <p>Точная стоимость фиксируется в договоре после изучения документов. Оплата по этапам, без предоплаты.</p>
+    </div>
+    <div class="price-list reveal">
+      <div class="pr free"><span>Первичная оценка по документам</span><b>Бесплатно</b></div>
+      <div class="pr"><span>Консультация, 30–40 минут</span><b>2 000 ₽</b></div>
+      <div class="pr"><span>Претензия</span><b>от 5 000 ₽</b></div>
+      <div class="pr"><span>Жалоба на постановление о штрафе</span><b>5 000 ₽</b></div>
+      <div class="pr"><span>Проверка договора для физлица</span><b>3 000 ₽</b></div>
+      <div class="pr"><span>Проверка договора для бизнеса</span><b>от 5 000 ₽</b></div>
+      <div class="pr"><span>Исковое заявление</span><b>от 15 000 ₽</b></div>
+      <div class="pr"><span>Апелляция и кассация</span><b>от 35 000 ₽</b></div>
+      <div class="pr"><span>Арбитражный спор, первая инстанция</span><b>от 50 000 ₽</b></div>
+      <div class="pr"><span>Абонентское обслуживание бизнеса</span><b>от 15 000 ₽/мес</b></div>
+    </div>
+    <p class="price-foot">Консультация за 2 000 ₽ засчитывается в стоимость договора.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="kicker">Порядок работы</span>
+      <h2>Как мы <em>работаем</em></h2>
+    </div>
+    <div class="flow reveal">
+      <div><b>Документы</b><span>Присылаете фото иска, решения, договора или постановления в мессенджер.</span></div>
+      <div><b>Честная оценка</b><span>Говорю, есть ли шансы и что можно сделать, ещё до договора.</span></div>
+      <div><b>Договор</b><span>Фиксированная цена и этапы. Без предоплаты.</span></div>
+      <div><b>Отчёт</b><span>Вы знаете, что сделано и что дальше, на каждом шаге.</span></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="kicker">Вопросы</span>
+      <h2>Частые <em>вопросы</em></h2>
+    </div>
+    <div class="faq reveal">
+      <details><summary>Сколько стоит первая консультация?</summary><p>Первичная оценка по документам бесплатна: пришлите фото, и я скажу, есть ли основания для иска или жалобы. Подробная консультация на 30–40 минут стоит 2 000 ₽ и засчитывается в договор.</p></details>
+      <details><summary>Можно ли работать удалённо, если я не в Петербурге?</summary><p>Да. Документы подаются в суд в электронном виде, консультации — по телефону или в мессенджере. Лично принимаю в Приморском районе, у метро «Комендантский проспект».</p></details>
+      <details><summary>Что если срок на обжалование уже пропущен?</summary><p>Срок можно попробовать восстановить, если для этого есть уважительные причины. Пришлите документы — скажу, есть ли основания.</p></details>
+      <details><summary>Нужна ли предоплата?</summary><p>Нет. Работаю по договору с фиксированной ценой, оплата по этапам.</p></details>
+    </div>
+  </div>
+</section>
+
+<section id="contacts" style="padding-top:0">
+  <div class="wrap">
+    <div class="contact reveal">
+      <div>
+        <span class="kicker">Контакты</span>
+        <h2 style="margin-top:18px">Опишите ситуацию — <em>отвечу в течение 2 часов</em></h2>
+        <p>Лично — Приморский район Санкт-Петербурга, м. «Комендантский проспект». Удалённо — по всей России. Срочные дела беру.</p>
+        <!-- ЗАПОЛНИТЬ: ссылки на телефон и объявление на Авито -->
+        <a class="btn btn-brass" href="tel:+70000000000">Позвонить <span class="arrow">→</span></a>
+      </div>
+      <div class="c-list">
+        <!-- ЗАПОЛНИТЬ: телефон и почта -->
+        <div><small>Телефон</small><a href="tel:+70000000000">+7 (000) 000-00-00</a></div>
+        <div><small>Почта</small><a href="mailto:example@example.ru">example@example.ru</a></div>
+        <div><small>Часы работы</small><span>Пн–сб, 9:00–18:00</span></div>
+      </div>
+      <figure class="contact-photo"><img src="img/about-black.jpg" alt="Портрет юриста" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Юрист, Санкт-Петербург</span>
+    <span>Информация на сайте не является публичной офертой</span>
+  </div>
+</footer>
+
+<script>
+// Шапка темнеет при прокрутке
+const top_ = document.getElementById('top');
+const onScroll = () => top_.classList.toggle('solid', scrollY > 40);
+addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+// Появление блоков
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .12 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+// Раскрытие направлений
+document.querySelectorAll('.area').forEach(a => a.addEventListener('click', () => a.classList.toggle('open')));
+
+// Калькулятор шансов: каждый ответ даёт от 0 до 2 баллов
+const Q = [
+  { q: 'Что у вас за ситуация?', o: [['Спор по договору или долг', 2], ['Решение суда, с которым не согласны', 2], ['Штраф или постановление госоргана', 2], ['Земельный или экологический спор', 2], ['Другое', 1]] },
+  { q: 'Когда вы получили документ или узнали о нарушении?', o: [['Меньше 10 дней назад', 2], ['От 10 дней до месяца', 1], ['Больше месяца назад', 1], ['Не помню', 0]] },
+  { q: 'Есть ли у вас документы по делу?', o: [['Да, всё на руках', 2], ['Частично', 1], ['Нет', 0]] },
+  { q: 'Есть ли подтверждения вашей позиции?', o: [['Переписка, платежи, фото, свидетели', 2], ['Что-то есть, но немного', 1], ['Пока ничего', 0]] },
+  { q: 'Обращались ли вы уже к другой стороне или в суд?', o: [['Ещё нет', 2], ['Отправил претензию или жалобу', 2], ['Уже был суд, и я проиграл', 1]] },
+];
+let i = 0, score = 0;
+const $ = id => document.getElementById(id);
+function render() {
+  $('bar').style.width = (i / Q.length * 100) + '%';
+  if (i === Q.length) return finish();
+  $('qArea').style.display = ''; $('result').classList.remove('show');
+  $('qCount').textContent = 'Вопрос ' + (i + 1) + ' из ' + Q.length;
+  $('qTitle').textContent = Q[i].q;
+  $('qOpts').innerHTML = '';
+  Q[i].o.forEach(([t, s]) => {
+    const b = document.createElement('button'); b.className = 'opt'; b.type = 'button'; b.textContent = t;
+    b.onclick = () => { score += s; i++; render(); };
+    $('qOpts').appendChild(b);
+  });
+}
+function finish() {
+  $('qArea').style.display = 'none'; $('result').classList.add('show');
+  const max = Q.length * 2, lvl = Math.max(1, Math.round(score / max * 5));
+  [...$('gauge').children].forEach((g, k) => g.classList.toggle('on', k < lvl));
+  const r = score >= 8 ? ['Шансы хорошие', 'По вашим ответам у дела крепкая позиция. Важно не потерять время: пришлите документы, и я скажу, с чего начать.']
+          : score >= 5 ? ['Шансы есть', 'Позицию можно усилить: собрать доказательства и правильно выбрать способ защиты. Разберём это на бесплатной оценке.']
+          : ['Нужен взгляд юриста', 'Анкета видит не всё. Часто основания находятся в деталях документов — пришлите их, и я скажу честно, стоит ли идти дальше.'];
+  $('rTitle').textContent = r[0]; $('rText').textContent = r[1];
+}
+$('restart').onclick = () => { i = 0; score = 0; render(); };
+render();
+</script>
+</body>
+</html>
