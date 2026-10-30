@@ -520,6 +520,7 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
       </div>
       <div class="c-list">
         <div><small>Телефон</small><a href="tel:+79313103156">+7 931 310-31-56</a></div>
+        <div><small>Почта</small><a id="mail" data-u="mst21" data-d="bk.ru">почта</a></div>
         <div><small>Часы работы</small><span>Пн–сб, 9:00–18:00</span></div>
       </div>
       <figure class="contact-photo"><img src="img/about-black.jpg" alt="Юрий, юрист" loading="lazy"></figure>
@@ -535,6 +536,10 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
 </footer>
 
 <script>
+// Почта собирается в браузере, чтобы адреса не было в исходном коде
+const mail = document.getElementById('mail');
+if (mail) { const a = mail.dataset.u + '@' + mail.dataset.d; mail.href = 'mailto:' + a; mail.textContent = a; }
+
 // Шапка темнеет при прокрутке
 const top_ = document.getElementById('top');
 const onScroll = () => top_.classList.toggle('solid', scrollY > 40);
