@@ -2,6 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://yuristyuriy.ru/</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://yuristyuriy.ru/semeynye/</loc>
+    <lastmod>2026-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://yuristyuriy.ru/zemlya-ekologiya/</loc>
+    <lastmod>2026-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://yuristyuriy.ru/grazhdanskie/</loc>
+    <lastmod>2026-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://yuristyuriy.ru/arbitrazh/</loc>
+    <lastmod>2026-11-17</lastmod>
   </url>
 </urlset>
